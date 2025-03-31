@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Inc. - Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <!-- Left Side: Form Section -->
+        <div class="auth-form-section">
+            <h1>Acunetix Security Inc.</h1>
+            <b><p class="motto">Cyberspace Intelligence Partner</p></b>
+
+            <!-- Login Form -->
+            <div id="login-section">
+                <h2>Welcome To A.S Inc. ⚔</h2>
+                <i><h4>Please fill in your details</h4></i>
+                <form id="loginForm">
+                    <input type="email" id="login-username" placeholder="Email or Username" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <label><input type="checkbox" color="blue"> Remember me</label>
+                    <button type="submit">Sign In</button>
+                </form>
+                <p id="login-error" class="error-message"></p>
+                <p><a href="#">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+                <p style="color:blue;">Copyright © 2025- Acunetix Security Inc. @Iddy</p>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signup-section" class="hidden">
+                <h2>Create an Account</h2>
+                <form id="signupForm">
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p id="signup-error" class="error-message"></p>
+                <p>Already have an account? <a href="#" onclick="toggleForms()">Sign In</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side: Illustration -->
+        <div class="auth-image-section">
+            <img src="company3.jpg" alt="Cybersecurity Illustration">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
