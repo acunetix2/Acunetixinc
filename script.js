@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Redirect to dashboard if user is already logged in
     if (localStorage.getItem("loggedInUser")) {
-        //window.location.href = "index2.html";
+        window.location.href = "index.html";
     }
 
     // Toggle between login and signup forms
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (storedUser && storedUser.password === password) {
                 localStorage.setItem("loggedInUser", username);
-                //window.location.href = "index2.html"; // Redirect to dashboard
+                window.location.href = "index.html"; // Redirect to dashboard
             } else {
                 errorMessage.textContent = "Invalid username or password!";
             }
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem(newUsername, JSON.stringify(newUser));
             localStorage.setItem("loggedInUser", newUsername);
 
-            //window.location.href = "index2.html"; // Redirect to dashboard
+            window.location.href = "index.html"; // Redirect to dashboard
         });
     }
 });
